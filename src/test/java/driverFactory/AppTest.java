@@ -41,7 +41,7 @@ public class AppTest extends AppUtil {
 			String Notes = xl.getCellData(TestData, i, 8);
 			logger.log(LogStatus.INFO, customerName+"   "+Address+"  "+City+"  "+Country+"  "+ContactPerson+"  "+
 			phoneNumber+"  "+Email+"  "+MobileNumber+"  "+Notes);
-			boolean res = customer.addCustomer(custottmerName, Address, City, Country, ContactPerson, phoneNumber, Email, 
+			boolean res = customer.addCustomer(customerName, Address, City, Country, ContactPerson, phoneNumber, Email, 
 					MobileNumber, Notes);
 			if(res)
 			{
@@ -61,4 +61,3 @@ public class AppTest extends AppUtil {
 	}
 
 }
-
